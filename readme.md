@@ -1,43 +1,54 @@
-# 🧠 Brain Tumor Detection System (AI Powered)
+# 🧠 NeuroScan AI | Brain Tumor Detection System
 
-This project is a **Brain Tumor Detection System** built using **Deep Learning** and **Transfer Learning** with **CNN models**.  
-The system can classify **Brain MRI images** as **Tumor** or **No Tumor**.  
-It also has a **Streamlit-based interface** for easy interaction and is ready for deployment on **Streamlit Cloud**.
+**NeuroScan AI** is a high-performance, deep-learning powered diagnostic dashboard designed to assist medical professionals in the rapid analysis of Brain MRI scans.
 
 ---
 
-## Features
+## ✨ Features
 
-- Upload MRI images via a **web interface**.
-- Detects presence of a **brain tumor**.
-- Shows **confidence score (%)**.
-- Uses a **pre-trained MobileNetV2** model with **transfer learning**.
-- Optional: fine-tuning for improved accuracy.
-- Fully deployable on **Streamlit Cloud**.
+- **Modern Single-Page Dashboard**: A premium, wide-layout interface that fits perfectly on one screen.
+- **AI-Powered Detection**: Leverages a Deep Convolutional Neural Network (CNN) to detect tumors with high precision.
+- **Glassmorphism Aesthetic**: Sleek medical-themed UI with semi-transparent, blurred elements.
+- **Real-Time Analysis**: Instant results with confidence scores displayed directly below the analysis trigger.
+- **Diagnostic Viewport**: High-resolution image preview with strict vertical constraints to maintain layout stability.
+- **Cloud Ready**: Optimized for deployment on Streamlit Cloud or Docker environments.
 
 ---
 
-## Dataset
+## 🛠️ Technology Stack
 
-- **Dataset used**: Brain Tumor MRI Dataset (Open-source, Kaggle/Figshare)
-- **Classes**: 
-  - Tumor
-  - No Tumor
-- Dataset folder structure:
+- **Backend**: Python 3.x, TensorFlow/Keras
+- **Frontend**: Streamlit (with Custom CSS Injection)
+- **Image Processing**: PIL (Pillow), NumPy
+- **Model**: Custom CNN (Informed by MobileNetV2 architecture)
 
-dataset/
-├── tumor/
-│ ├── img1.jpg
-│ └── ...
-└── no_tumor/
-├── img1.jpg
-└── ...
+---
 
+## 🚀 Getting Started
 
-References
+### Prerequisites
+- Python 3.10+
+- `pip install -r requirements.txt`
 
-Kaggle: Brain Tumor MRI Dataset
+### Running Locally
+```powershell
+streamlit run app.py
+```
 
-MobileNetV2 Paper
+---
 
-Streamlit Documentation
+## 📂 Project Structure
+
+- `app.py`: The core Streamlit application logic and UI.
+- `brain_tumor_model.keras`: The pre-trained deep learning model.
+- `train_model.py`: Script used for training/fine-tuning the detection model.
+- `dataset/`: Training and validation data directory.
+
+---
+
+## ⚠️ Medical Disclaimer
+This tool is intended for **research and educational purposes only**. It should not be used as a replacement for professional medical diagnosis. Always consult a certified radiologist or healthcare provider for clinical evaluations.
+
+---
+
+*Developed with ❤️ by NeuroScan AI Team*
